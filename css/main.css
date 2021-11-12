@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dongle:wght@300;400;700&family=Josefin+Sans:ital,wght@0,200;0,500;1,300&family=Kaushan+Script&family=Special+Elite&display=swap');
+:root{
+    --lg-font: 'Kaisei Tokumin', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5345b;
+    --deepblue:#2A39FA;
+    --curf: 'Special Elite', cursive;
+    --kau: 'Kaushan Script', cursive;
+    --jos : 'Josefin Sans', sans-serif;
+    --dong: 'Dongle', sans-serif;
+    --bang: 'Bangers', cursive;
+}
+body{
+    font-family: var(--kau);
+}
+
+
+.bg-primary{
+    background-color: var(--deepblue)!important;
+}
+
+.btn:not(.nav-btns button){
+    background-color: rgb(120, 162, 240);
+    color: rgb(0, 0, 0);
+    padding: 10px 28px;
+    border-radius: 17px;
+    border: 2px solid rgb(85, 85, 85);
+}
+.btn:not(.nav-btns button):hover{
+    background-color: rgb(214, 15, 15);
+    color: #fff;
+    border-color:rgb(103, 172, 252);
+}
+
+
+.text-primary{
+    color: var(--pink)!important;
+}
+
+
+.navbar{
+    -webkit-box-shadow: 0 3px 9px 3px rgba(31, 151, 187, 0.4);
+            box-shadow: 0 3px 9px 3px rgba(31, 151, 187, 0.4);
+}
+.navbar-brand img{
+    width: 30px;
+}
+.navbar-brand span{
+    letter-spacing: 2px;
+    font-family: var(--kau);
+}
+.nav-link:hover{
+    color: var(--deepblue)!important;
+}
+.nav-item{
+    border-bottom: 0.8px solid rgba(12, 103, 223, 0.05);
+}
+
+
+#header{
+    background: url(../images/bannerimg.jpg) top/cover no-repeat;
+}
+.carousel-inner h1{
+    font-size: 60px;
+    letter-spacing:6px;
+    font-family: var(--bang);
+}
+.carousel-item .btn{
+    border-color: #fff!important;
+    
+}
+.carousel-item .btn:hover{
+    border-color: var(--pink)!important;
+}
+.textflying{
+    color:rgb(255, 255, 255);
+    
+
+}
