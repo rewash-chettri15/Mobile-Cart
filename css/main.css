@@ -4,6 +4,8 @@
     --lg-font: 'Kaisei Tokumin', serif;
     --sm-font: 'Poppins', sans-serif;
     --pink: #e5345b;
+    --yellow: #ffdb11;
+    --red:  rgb(214, 15, 15);
     --deepblue:#2A39FA;
     --curf: 'Special Elite', cursive;
     --kau: 'Kaushan Script', cursive;
@@ -35,7 +37,7 @@ body{
 
 
 .text-primary{
-    color: var(--pink)!important;
+    color: var(--yellow)!important;
 }
 
 
@@ -71,10 +73,39 @@ body{
     
 }
 .carousel-item .btn:hover{
-    border-color: var(--pink)!important;
+    border-color: var(--deepblue)!important;
 }
 .textflying{
     color:rgb(255, 255, 255);
     
 
+}
+
+
+
+.title h2::before{
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+   
+    
+   
+}
+
+
+.active-filter-btn{
+    background-color: var(--red)!important;
+    color: #fff!important;
+    border-color: var(--red)!important;
+}
+.filter-button-group .btn:hover{
+    color: #fff!important;
+}
+.collection-img span{
+    top: 20px;
+    right: 20px;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
 }
