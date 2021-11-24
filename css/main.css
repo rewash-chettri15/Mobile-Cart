@@ -81,6 +81,16 @@ body{
 
 }
 
+.bannertext{
+    color:yellow;
+}
+
+
+.blogtext{
+    color:#252fc5
+}
+
+
 
 
 .title h2::before{
@@ -108,4 +118,110 @@ body{
     width: 46px;
     height: 46px;
     border-radius: 50%;
+}
+
+
+/* special */
+.special-img span{
+    top: 20px;
+    right: 20px;
+}
+.special-list .btn{
+    padding: 8px 20px!important;
+}
+.special-img img{
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.special-img:hover img{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+/* offers */
+#offers{
+    background: url(../images/discountbanner.jpg) center/cover no-repeat;
+}
+#offers .row{
+    min-height: 60vh;
+}
+.offers-content span{
+    font-size: 28px;
+}
+.offers-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.offers-content .btn{
+    border-color: transparent!important;
+}
+
+
+#featuredprod{
+    background: url(../images/offer_img.jpg) center/cover no-repeat;
+}
+#featuredprod .row{
+    min-height: 60vh;
+}
+#featuredprod-content span{
+    font-size: 28px;
+}
+.featuredprod-content h2{
+    font-size: 60px;
+    font-family: var(--lg-font);
+}
+.featuredprod-content .btn{
+    border-color: transparent!important;
+}
+
+/* about */
+#about{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+/* newsletter */
+#sub{
+    background-color: rgba(179, 179, 179, 0.05);
+}
+#sub p{
+    max-width: 600px;
+}
+#sub .input-group{
+    max-width: 500px;
+}
+#sub .form-control{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#sub.btn{
+    background-color: var(--pink);
+    color: #fff;
+    border-color: var(--pink);
+}
+#sub .btn:hover{
+    background-color: #000;
+    border-color: #000;
+}
+
+/* footer */
+footer .brand{
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+footer a{
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+footer a:hover{
+    color: var(--pink)!important;
+}
+
+/* media queries */
+@media(min-width: 992px){
+    .nav-item{
+        border-bottom: none;
+    }
 }
