@@ -23,19 +23,19 @@
             </a>
 
             <div class = "order-lg-2 nav-btns">
-                <button type = "button" class = "btn position-relative">
+                <button type = "button" class = "btn position-relative" id="cart-shop">
                     <i class = "fas fa-cart-arrow-down"></i>
-                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">5</span>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">3</span>
                 </button>
                 <button type = "button" class = "btn position-relative">
                     <i class = "fa fa-heart"></i>
-                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+                    <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary">16</span>
                 </button>
-                <button type = "button" class = "btn position-relative">
+                <button type = "button" class = "btn position-relative" id="search">
                     <i class = "fa fa-search"></i>
                     <span class = "position-absolute top-0 start-100 translate-middle badge bg-primary"></span>
                 </button>
-                <button type = "button" class = "btn position-relative">
+                <button type = "button" class = "btn position-relative" id="login-btn">
                     <i class = "fas fa-user"></i>
                 </button>
             </div>
@@ -69,6 +69,123 @@
             </div>
         </div>
     </nav>
+
+
+    <!--login form-->
+
+
+    
+<div class="login-form-container">
+
+    <div id="close-login-btn" class="fas fa-times"></div>
+
+    <form action="">
+        <h3>SIGN IN</h3>
+        <span>Username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>Password</span>
+        <input type="password" name="" class="box" placeholder="enter your password" id="">
+        <div class="checkbox">
+            <input type="checkbox" name="" id="remember-me">
+            <label for="remember-me"> Remember me</label>
+        </div>
+        <input type="submit" value="Sign in" class="btn">
+        <p>Forget password ? <a href="#">click here</a></p>
+        <p>Don't have an account ? <a href="#">create one</a></p>
+    </form>
+
+</div>
+
+<!--loginform-->
+
+<!-- search -->
+
+<div class="search-form">
+
+    <div id="close-search" class="fas fa-times"></div>
+
+    <form action="">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+</div>
+
+<!--search-->
+
+
+<!-- shopping-cart section  -->
+
+<section class="shopping-cart-container">
+
+    <div class="products-container">
+
+        <h3 class="title">Your Products</h3>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/iphone11.png" alt="">
+                <div class="content">
+                    <h3>iPhone 11</h3>
+                    <span> Quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> Price : </span>
+                    <span class="price">&#8377 48999  </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/laptop2.png" alt="">
+                <div class="content">
+                    <h3>LG Gram 14 11th Gen</h3>
+                    <span> Quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> Price : </span>
+                    <span class="price"> &#8377 85000 </span>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-times"></i>
+                <img src="images/iphone13pro.png" alt="">
+                <div class="content">
+                    <h3>iPhone 13 Pro</h3>
+                    <span> Quantity : </span>
+                    <input type="number" name="" value="1" id="">
+                    <br>
+                    <span> Price : </span>
+                    <span class="price"> &#8377 119900</span>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="cart-total">
+
+        <h3 class="title"> Cart Total </h3>
+
+        <div class="box">
+
+            <h3 class="subtotal"> Subtotal : <span>&#8377 2538999</span> </h3>
+            <h3 class="total"> Total : <span>&#8377 253969</span> </h3>
+
+            <a href="#" class="btn">proceed to checkout</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
     
 
     
@@ -77,7 +194,7 @@
             <div class = "text-center carousel-item active">
                 <h2 class = "text-capitalize text-white">best collection</h2>
                 <h1 class = "text-uppercase py-2 fw-bold textflying ">Featured Products</h1>
-                <a href = "#special" class = "btn mt-3 text-uppercase">shop now</a>
+                <a href = "#featuredprod" class = "btn mt-3 text-uppercase">shop now</a>
             </div>
             <div class = "text-center carousel-item">
                 <h2 class = "text-capitalize text-white">best price & offer</h2>
@@ -482,6 +599,7 @@
                     <div class = "col-md-6 col-lg-4 col-xl-3 p-2 laptops">
                         <div class = "collection-img position-relative">
                             <img src = "images/laptop3.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Offer</span>
                             
                         </div>
                         <div class = "text-center">
@@ -522,6 +640,7 @@
                     <div class = "col-md-6 col-lg-4 col-xl-3 p-2 laptops">
                         <div class = "collection-img position-relative">
                             <img src = "images/laptop5.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Offer</span>
                             
                         </div>
                         <div class = "text-center">
@@ -562,6 +681,7 @@
                     <div class = "col-md-6 col-lg-4 col-xl-3 p-2 laptops">
                         <div class = "collection-img position-relative">
                             <img src = "images/laptop7.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Offer</span>
                             
                         </div>
                         <div class = "text-center">
@@ -602,6 +722,7 @@
                     <div class = "col-md-6 col-lg-4 col-xl-3 p-2 smartwatch">
                         <div class = "collection-img position-relative">
                             <img src = "images/sw4.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Offer</span>
                             
                         </div>
                         <div class = "text-center">
@@ -622,6 +743,7 @@
                     <div class = "col-md-6 col-lg-4 col-xl-3 p-2 smartwatch">
                         <div class = "collection-img position-relative">
                             <img src = "images/sw1.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Offer</span>
                             
                         </div>
                         <div class = "text-center">
@@ -642,6 +764,7 @@
                     <div class = "col-md-6 col-lg-4 col-xl-3 p-2 smartwatch">
                         <div class = "collection-img position-relative">
                             <img src = "images/sw5.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Offer</span>
                             
                         </div>
                         <div class = "text-center">
@@ -722,6 +845,7 @@
                     <div class = "col-md-6 col-lg-4 col-xl-3 p-2 smartwatch">
                         <div class = "collection-img position-relative">
                             <img src = "images/sw7.png" class = "w-100">
+                            <span class = "position-absolute bg-primary text-white d-flex align-items-center justify-content-center">Offer</span>
                             
                         </div>
                         <div class = "text-center">
@@ -751,8 +875,8 @@
         <div class = "container">
             <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
                 <div class = "offers-content">
-                    <span class = "text-white">Great Discount On Selected Products</span>
-                    <h2 class = "mt-2 mb-4 text-white">Great Grand Sale !</h2>
+                    <span class = "bannertext">Great Discount On Selected Products</span>
+                    <h2 class = "mt-2 mb-4 bannertext">Great Grand Sale !</h2>
                     <a href = "#special" class = "btn">Buy Now</a>
                 </div>
             </div>
@@ -779,7 +903,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize mt-3 mb-1">iphone 13</p>
                         <span class = "fw-bold d-block">&#8377 <del>85000</del>&nbsp&nbsp75900</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -793,7 +917,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize mt-3 mb-1">iphone XR</p>
                         <span class = "fw-bold d-block">&#8377 <del>42999</del>&nbsp&nbsp35999</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -807,7 +931,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize mt-3 mb-1">iphone 11</p>
                         <span class = "fw-bold d-block">&#8377 <del>58705</del>&nbsp&nbsp48999</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -821,7 +945,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize mt-3 mb-1">OnePlus Nord CE</p>
                         <span class = "fw-bold d-block">&#8377 <del>29999</del>&nbsp&nbsp24999</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -835,7 +959,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize mt-3 mb-1">OnePlus Nord 2</p>
                         <span class = "fw-bold d-block">&#8377 <del>36999</del>&nbsp&nbsp28999</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -849,7 +973,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize my-1">JBL Tune 500BT Headphones</p>
                             <span class = "fw-bold d-block">&#8377 <del>3999</del>&nbsp&nbsp3249</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -863,7 +987,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize my-1">JBL C115 TWS Earbuds</p>
                             <span class = "fw-bold d-block">&#8377 <del>5500</del>&nbsp&nbsp3999</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -877,7 +1001,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize my-1">Tribit StormBox Bluetooth Speaker</p>
                             <span class = "fw-bold d-block">&#8377 <del>6999</del>&nbsp&nbsp4699</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -891,7 +1015,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize my-1">Philips BT40BK/94 Bluetooth Speaker</p>
                             <span class = "fw-bold d-block">&#8377 <del>1600</del>&nbsp&nbsp1235</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -905,7 +1029,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize my-1">Apple MacBook Air</p>
                         <span class = "fw-bold d-block">&#8377 <del>92900</del>&nbsp&nbsp82000</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -919,7 +1043,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize my-1">Asus Vivobook 15</p>
                             <span class = "fw-bold d-block">&#8377 <del>34800</del>&nbsp&nbsp25000</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -933,7 +1057,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize my-1">MSI GF75 Core i7</p>
                         <span class = "fw-bold d-block">&#8377 <del>95990</del>&nbsp&nbsp73990</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -948,7 +1072,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize my-1">Apple Watch SE</p>
                         <span class = "fw-bold d-block">&#8377 <del>32900</del>&nbsp&nbsp26900</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -962,7 +1086,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize my-1">Garmin Forerunner Smartwatch</p>
                             <span class = "fw-bold d-block">&#8377 <del>36490</del>&nbsp&nbsp29990</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -976,7 +1100,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize my-1">boAt Xtend Smartwatch Black</p>
                             <span class = "fw-bold d-block">&#8377 <del>7990</del>&nbsp&nbsp2999</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
 
@@ -990,7 +1114,7 @@
                     <div class = "text-center">
                         <p class = "text-capitalize my-1">Noise ColorFit Pulse </p>
                         <span class = "fw-bold d-block">&#8377 <del>4999</del>&nbsp&nbsp2499</span>
-                        <a href = "#" class = "btn btn-primary mt-3">Add to Cart</a>
+                        <a href = "#special" class = "btn btn-primary mt-3">Add to Cart</a>
                     </div>
                 </div>
             </div>
@@ -1004,7 +1128,7 @@
             <div class = "row d-flex align-items-center justify-content-center text-center justify-content-lg-start text-lg-start">
                 <div class = "offers-content">
                     <span class = "bannertext">Our Popular And Featured Products</span>
-                    <h2 class = "mt-2 mb-4 text-white">Best Quality, Best Brands!</h2>
+                    <h2 class = "mt-2 mb-4 bannertext">Best Quality, Best Brands!</h2>
                     <a href = "#popular" class = "btn">Check Out</a>
                 </div>
             </div>
@@ -1181,6 +1305,124 @@
         </div>
     </section>
     <!--about us -->
+
+    <!-- subscribe -->
+    <section id = "sub" class = "py-5">
+        <div class = "container">
+            <div class = "d-flex flex-column align-items-center justify-content-center">
+                <div class = "title text-center pt-3 pb-5">
+                    <h2 class = "position-relative d-inline-block ms-4">Mobile Cart Subscription</h2>
+                </div>
+
+                <p class = "text-center ">Subscribe to Mobile Cart for updates about our upcoming products and restocking of products. 
+                    <br>
+                    You will directly get updates in your Mail.
+                </p>
+                <div class = "input-group mb-3 mt-3">
+                    <input type = "text" class = "form-control" placeholder="Enter Your Email">
+                    <button class = "btn btn-primary" type = "submit">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- subscribe -->
+
+     <!-- footer -->
+     <footer class = "bg-dark py-5">
+        <div class = "container">
+            <div class = "row bannertext g-4">
+                <div class = "col-md-6 col-lg-3">
+                    <a class = "text-uppercase text-decoration-none  footertext" href = "index.html">Mobile Cart</a>
+                    <p class = "textflying  mt-3">We are Mobile Cart, an online shopping store. Here we sell best quality products from best and trusted brands.
+
+                    </p>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light footertext">Links</h5>
+                    <ul class = "list-unstyled">
+                        <li class = "my-3">
+                            <a href = "#home" class = "text-white text-decoration-none ">
+                                <i class = "fas fa-chevron-right me-1"></i> Home
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#collection" class = "text-white text-decoration-none ">
+                                <i class = "fas fa-chevron-right me-1"></i> Collection
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#updates" class = "text-white text-decoration-none ">
+                                <i class = "fas fa-chevron-right me-1"></i> Updates
+                            </a>
+                        </li>
+                        <li class = "my-3">
+                            <a href = "#about" class = "text-white text-decoration-none ">
+                                <i class = "fas fa-chevron-right me-1"></i> About Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light  footertext mb-3">Contact Us</h5>
+                    <div class = "d-flex justify-content-start align-items-start my-2 ">
+                        <span class = "me-3 textflying">
+                            <i class = "fas fa-map-marked-alt"></i>
+                        </span>
+                        <span class = "fw-light textflying">
+                            Cross Park Street, Mobile Cart, India 
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 ">
+                        <span class = "me-3 textflying">
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span class = "fw-light textflying">
+                            mobilecartsupport@gmail.com
+                        </span>
+                    </div>
+                    <div class = "d-flex justify-content-start align-items-start my-2 text-muted">
+                        <span class = "me-3 textflying">
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span class = "fw-light textflying">
+                            +91-6240846105
+                        </span>
+                    </div>
+                </div>
+
+                <div class = "col-md-6 col-lg-3">
+                    <h5 class = "fw-light  footertext mb-3">Our Socials</h5>
+                    <div>
+                        <ul class = "list-unstyled d-flex">
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none  fs-4 me-4">
+                                    <i class = "fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none  fs-4 me-4">
+                                    <i class = "fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none  fs-4 me-4">
+                                    <i class = "fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "text-white text-decoration-none  fs-4 me-4">
+                                    <i class = "fab fa-pinterest"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
 
 
     

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Dongle:wght@300;400;700&family=Josefin+Sans:ital,wght@0,200;0,500;1,300&family=Kaushan+Script&family=Special+Elite&display=swap');
 :root{
     --lg-font: 'Kaisei Tokumin', serif;
     --sm-font: 'Poppins', sans-serif;
-    --pink: #e5345b;
+    
     --yellow: #ffdb11;
     --red:  rgb(214, 15, 15);
     --deepblue:#2A39FA;
@@ -82,7 +82,7 @@ body{
 }
 
 .bannertext{
-    color:yellow;
+    color:black;
 }
 
 
@@ -90,6 +90,9 @@ body{
     color:#252fc5
 }
 
+.footertext{
+    color:rgb(95, 216, 253)
+}
 
 
 
@@ -152,7 +155,7 @@ body{
 }
 .offers-content h2{
     font-size: 60px;
-    font-family: var(--lg-font);
+    font-family: var(--curf);
 }
 .offers-content .btn{
     border-color: transparent!important;
@@ -170,7 +173,7 @@ body{
 }
 .featuredprod-content h2{
     font-size: 60px;
-    font-family: var(--lg-font);
+    font-family: var(--bang)!important;
 }
 .featuredprod-content .btn{
     border-color: transparent!important;
@@ -192,17 +195,17 @@ body{
     max-width: 500px;
 }
 #sub .form-control{
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 #sub.btn{
-    background-color: var(--pink);
+    background-color: var(--red);
     color: #fff;
-    border-color: var(--pink);
+    border-color: var(--deepblue);
 }
 #sub .btn:hover{
-    background-color: #000;
-    border-color: #000;
+    background-color:var(--red);
+    border-color: var(--deepblue);
 }
 
 /* footer */
@@ -216,7 +219,7 @@ footer a{
     transition: color 0.3s ease;
 }
 footer a:hover{
-    color: var(--pink)!important;
+    color: var(--red)!important;
 }
 
 /* media queries */
@@ -225,3 +228,315 @@ footer a:hover{
         border-bottom: none;
     }
 }
+
+
+/*logintrial*/
+.login-form-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgba(255,255,255,.9);
+    position:fixed;
+    top:0; right:-105%;
+    z-index: 10000;
+    height:100%;
+    width:100%;
+}
+
+.login-form-container.active{
+    right:0;
+}
+
+.login-form-container form{
+    background:rgb(129, 209, 255);
+    border:var(--border);
+    width:30rem;
+    padding:2rem;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    margin:2rem;
+}
+
+.login-form-container form h3{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color:var(--black);
+    text-align: center;
+}
+
+.login-form-container form span{
+    display: block;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+}
+
+.login-form-container form .box{
+    width: 100%;
+    margin:.7rem 0;
+    font-size: 1.6rem;
+    border:var(--border);
+    border-radius: .5rem;
+    padding:1rem 1.2rem;
+    color:var(--black);
+    text-transform: none;
+}
+
+.login-form-container form .checkbox{
+    display:flex;
+    align-items: center;
+    gap:.5rem;
+    padding:1rem 0;
+}
+
+.login-form-container form .checkbox label{
+    font-size: 1.5rem;
+    color:var(--light-color);
+    cursor: pointer;
+}
+
+.login-form-container form .btn{
+    text-align: center;
+    width:100%;
+    margin:1.5rem 0;
+}
+
+.login-form-container form p{
+    padding-top: .8rem;
+    color:var(--black);
+    font-size: 1.5rem;
+}
+
+.login-form-container form p a{
+    color:var(--green);
+    text-decoration: underline;
+}
+
+.login-form-container #close-login-btn{
+    position: absolute;
+    top:1.5rem; right:2.5rem;
+    font-size: 3rem;
+    color:var(--black);
+    cursor: pointer;
+}
+
+
+/*trial*/
+.shopping-cart-container {
+    position: fixed;
+    top: 8.5rem;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: calc(100vh - 8.5rem);
+    background: rgb(255, 255, 255);
+    overflow-y: scroll;
+    padding-bottom: 8rem;
+    display: none;
+  }
+  
+  .shopping-cart-container.active {
+    display: block;
+  }
+  
+  .shopping-cart-container::-webkit-scrollbar {
+    width: 1rem;
+  }
+  
+  .shopping-cart-container::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  
+  .shopping-cart-container::-webkit-scrollbar-thumb {
+    background: #130f40;
+    border-radius: 5rem;
+  }
+  
+  .shopping-cart-container .title {
+    font-size: 2.5rem;
+    padding: 1rem;
+    color: #130f40;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .shopping-cart-container .products-container {
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    -webkit-animation: fadeUp .4s linear;
+            animation: fadeUp .4s linear;
+  }
+  
+  .shopping-cart-container .products-container .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .shopping-cart-container .products-container .box-container .box {
+    border-radius: .5rem;
+    background: #f7f7f7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .shopping-cart-container .products-container .box-container .box .fa-times {
+    position: absolute;
+    top: .7rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #130f40;
+  }
+  
+  .shopping-cart-container .products-container .box-container .box .fa-times:hover {
+    color: #27ae60;
+  }
+  
+  .shopping-cart-container .products-container .box-container .box img {
+    height: 8rem;
+  }
+  
+  .shopping-cart-container .products-container .box-container .box .content h3 {
+    font-size: 2rem;
+    color: #130f40;
+  }
+  
+  .shopping-cart-container .products-container .box-container .box .content span {
+    font-size: 1.5rem;
+    color: #666;
+  }
+  
+  .shopping-cart-container .products-container .box-container .box .content span.price {
+    color: #27ae60;
+    font-size: 1.7rem;
+  }
+  
+  .shopping-cart-container .products-container .box-container .box .content input {
+    width: 8rem;
+    padding: .5rem 1.2rem;
+    font-size: 1.5rem;
+    color: #130f40;
+    margin: .7rem 0;
+  }
+  
+  .shopping-cart-container .cart-total {
+    margin-top: 2rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    -webkit-animation: fadeUp .4s linear .4s backwards;
+            animation: fadeUp .4s linear .4s backwards;
+  }
+  
+  .shopping-cart-container .cart-total .box {
+    padding: 1.5rem;
+  }
+  
+  .shopping-cart-container .cart-total .box h3 {
+    color: #130f40;
+    font-size: 2rem;
+    padding-bottom: .7rem;
+    
+  }
+  
+  .shopping-cart-container .cart-total .box h3 span {
+    color: #27ae60;
+    text-align: center;
+  }
+
+
+  .search-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    z-index: 10000;
+    -webkit-transform: translateY(-110%);
+            transform: translateY(-110%);
+  }
+  
+  .search-form.active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  
+  .search-form #close-search {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+  }
+  
+  .search-form #close-search:hover {
+    color: #3ecefa;
+  }
+  
+  .search-form form {
+    width: 50rem;
+    margin: 0 2rem;
+    padding-bottom: 2rem;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  
+  .search-form form input {
+    width: 100%;
+    font-size: 2rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+    padding-right: 2rem;
+  }
+  
+  .search-form form input::-webkit-input-placeholder {
+    color: #aaa;
+  }
+  
+  .search-form form input:-ms-input-placeholder {
+    color: #aaa;
+  }
+  
+  .search-form form input::-ms-input-placeholder {
+    color: #aaa;
+  }
+  
+  .search-form form input::placeholder {
+    color: #aaa;
+  }
+  
+  .search-form form label {
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .search-form form label:hover {
+    color: #3ecefa;
+  }
